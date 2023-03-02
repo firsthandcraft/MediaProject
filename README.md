@@ -1,7 +1,7 @@
 # MediaProject
 미디어사이트
 </br>
-<a href="https://youtu.be/H3oDBNIGfIc">완성사이트 보기</a>
+<a href="https://youtu.be/H3oDBNIGfIc">완성사이트 동영상으로 보기</a>
 </br></br>
 ![스크린샷 2023-03-02 오후 6 47 57](https://user-images.githubusercontent.com/97497153/222392841-9e8120fc-f1ae-4aee-8c41-948ded810728.png)
 
