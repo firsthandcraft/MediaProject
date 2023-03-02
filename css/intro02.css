@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+.hide{
+	width:0; height:0;
+	font-size:0; line-height:0;
+	position:absolute;
+	visibility: hidden;
+}
+
+#sec01>figure{
+	position:fixed;
+	width:100%; height:100%;
+	left:0; top:0;
+	z-index:-100;
+	text-align:center;
+}
+#sec01>figure>video{
+	width:auto;
+	height:100%;
+}
+
+/* header */
+header{
+}
+header>h1{
+	position:fixed;
+	width:100px;
+	height: 50px;
+	right: 3%;
+	top:5%;
+	margin: -25px 0 0 -50px;
+	z-index: 100;
+}
+header>h1>a>img{
+	width: 100%;
+}
+/* 검은 배경 */
+header>.blackback{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	left: 0; top: 0;	
+	background-image: radial-gradient(circle, rgba(107, 3, 3, 0.082) 40%, black 50%);
+
+}
+/* 비디오버튼 */
+/* aside */
+aside{
+	position: fixed;
+	bottom: 72px; right:2%;
+	width: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	z-index: 9000;
+}
+aside>p{
+	width: 40px;
+	height: 50px;
+	/* cursor: pointer;
+	text-align: center;
+	color: white;
+    font-size: 30px;
+    text-shadow: 0 0 10px rgb(251, 104, 104),
+    0 0 20px rgb(255, 0, 0),
+    0 0 30px rgb(250, 5, 5),
+    0 0 40px #ff0909,
+    0 0 70px #ff0202,
+    0 0 80px #ff2020,
+    0 0 100px red,
+    0 0 150px rgb(26, 1, 1); */
+}
+
+
+/* article */
+article#sec02{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	bottom: 0;left: 0;
+}
+article#sec02>.box01{
+	position: absolute;
+	padding: 70px;
+	left: 5%;
+	top: 0;
+	width:300px;
+	height: 100%;
+	animation: opacity 5s ease-in infinite alternate;
+}
+article#sec02>.box01>img{
+	height: 90vh;
+}
+article#sec03{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+article#sec03>div{
+	width: 1200px;
+	position: fixed;
+
+
+}
+article#sec03>div:nth-child(1){
+	top: -8%;
+	left: 15%;
+	animation: rotateleft 3s ease-in-out infinite alternate;
+}
+article#sec03>div:nth-child(2){
+	top: -8%;
+	right: 15%;
+	animation: rotateright 3s ease-in-out infinite alternate;
+}
+article#sec03>div:nth-child(3){
+	top: 0%;
+	right: -3%;
+	animation: rotateside 3s ease-in-out infinite alternate,
+	rotatetop 4s ease-in infinite alternate;
+}
+article#sec03>div:nth-child(4){
+	bottom: -5%;
+	left: 0%;
+	animation: scale 4s ease-in infinite alternate;;
+}
+/* 원효과 */
+article#sec03>p{
+	position:fixed;
+	width: 1000px;
+	height: 1000px;
+	left: 50%;
+	top: 50%;
+	margin: -500px 0 0 -500px;
+	animation: 10s ease-in infinite circle01;	
+}
+article#sec03>p>img{
+	width: 100%;
+	height: 100%;
+}
+article#sec03>section{
+	height: 100vh;
+	width: 400px;
+	position: fixed;
+	top: 0;
+}
+article#sec03>section>img{
+	height: 100vh;
+}
+article#sec03>.sright{
+	right: 0;
+	animation: smokeopacity 8s ease-in-out infinite alternate;
+}
+article#sec03>.sleft{
+	left: 0;
+	animation: smokeopacity 8s ease-in-out infinite alternate;
+}
+@keyframes smokeopacity{
+	0%{opacity: 1;}
+	40%{opacity: 0.3;}
+	100%{opacity: 0.9;}
+}
+@keyframes opacity{
+	0%{opacity: 1;}
+	40%{opacity: 0.5;}
+	100%{opacity: 0.7;}
+}
+@keyframes rotateleft{
+	0%{transform:rotate(-5deg);}
+	100%{transform:rotate(10deg);}
+}
+@keyframes rotateright{
+	0%{transform:rotate(7deg);}
+	100%{transform:rotate(-10deg);}
+}
+@keyframes rotateside{
+	0%{transform:rotate(7deg);}
+	100%{transform:rotate(-5deg);}
+}
+@keyframes scale{
+	0%{transform: scale(1)}
+	100%{transform: scale(1.5)}
+
+}
+
+@keyframes circle01{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+/* aside */
+.sound{
+	width: 30px;
+	height: 30px;
+}
+.sound>a{
+	float: left;
+	width: 30px;
+	height: 30px;
+	background: url('../images/mute.png') no-repeat center;
+}
+.sound>.on{
+	background-image: url('../images/soundon.png');
+}
+
+/* footer */
+footer{
+	width: 300px;
+	height: 30px;
+	position: absolute;	
+	bottom: 5px;
+	right:2%;
+}
+footer>small{
+	font-size: 16px;
+	float: right;
+	color: #d1141b;
+
+}
+
